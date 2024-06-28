@@ -1,0 +1,152 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #fafafa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* height: 100vh; */
+    margin: 0;
+}
+
+.login-container {
+    width: 100%;
+    max-width: 350px;
+    margin: 20px;
+
+}
+
+.login-box,
+.signup-box {
+    background-color: #fff;
+    /* border: 1px solid #dbdbdb; */
+    padding: 20px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.logo {
+    width: 175px;
+    margin: 20px auto;
+}
+
+.login-form input {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #dbdbdb;
+    border-radius: 5px;
+    background: #fafafa;
+}
+
+.login-form button  {
+    width: 100%;
+    padding: 10px;
+    background-color: #3897f0;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    margin-top: 10px;
+}
+.login-form button a{
+    text-decoration: none;
+    color: #fff;   
+}
+
+.divider {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+    font-size: 12px;
+}
+
+.divider .line {
+    flex-grow: 1;
+    height: 1px;
+    background-color: #dbdbdb;
+}
+
+.divider .or {
+    padding: 0 10px;
+    color: #8e8e8e;
+    /* font-weight: bold; */
+}
+
+.login-facebook {
+    background-color: #fff;
+    color: #385185;
+    border: none;
+    border-radius: 3px;
+    padding: 10px;
+    width: 100%;
+    margin-top: 10px;
+    align-items: center;
+    /* font-weight: bold; */
+
+}
+
+.forgot-password,
+.signup-box a {
+    color: #00376b;
+    text-decoration: none;
+    font-size: 12px;
+    /* font-weight: bold; */
+}
+
+.signup-box {
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.signup-box p {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.signup-link {
+    font-size: 12px;
+}
+
+.fb {
+    width: 15px;
+}
+
+.social {
+    background-color: #fff;
+    /* border: 1px solid #dbdbdb; */
+    padding: 20px;
+    margin-bottom: 10px;
+    text-align: center;
+    font-size: 14px;
+
+}
+
+.images .img1 {
+    width: 122px;
+    display: inline;
+}
+
+.images .img2 {
+    width: 100px;
+    display: inline;
+}
+.bottom{
+    background-color: #fff;
+    color: grey;
+    /* border: 1px solid #dbdbdb; */
+    padding: 20px;
+    margin-bottom: 10px;
+    text-align: center;
+    font-size: 12px;
+
+    /* letter-spacing: 3px; */
+
+
+}
+ .bottom p{
+    justify-content: space-between;
+ }

